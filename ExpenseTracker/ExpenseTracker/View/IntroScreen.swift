@@ -51,7 +51,7 @@ struct IntroScreen: View {
                     .foregroundStyle(.white)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 14)
-                    .background(.blue.gradient, in: .rect(cornerRadius: 12))
+                    .background(.accent.gradient, in: .rect(cornerRadius: 12))
                     .contentShape(.rect)
             }
         }

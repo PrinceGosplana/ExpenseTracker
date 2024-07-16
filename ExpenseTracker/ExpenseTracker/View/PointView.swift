@@ -17,7 +17,7 @@ struct PointView: View {
         HStack(spacing: 20) {
             Image(systemName: symbol)
                 .font(.largeTitle)
-                .foregroundStyle(.blue.gradient)
+                .foregroundStyle(.accent.gradient)
                 .frame(width: 45)
 
             VStack(alignment: .leading, spacing: 6) {
