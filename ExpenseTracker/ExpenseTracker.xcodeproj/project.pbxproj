@@ -15,6 +15,10 @@
 		8A23ADD62C464F6B004F3030 /* IntroScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A23ADD52C464F6B004F3030 /* IntroScreen.swift */; };
 		8A2AF39F2C479FE40053C844 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2AF39E2C479FE40053C844 /* Transaction.swift */; };
 		8A34F5062C4949C000AF27E6 /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A34F5052C4949C000AF27E6 /* TintColor.swift */; };
+		8AF53DAA2C496DFD00053484 /* Recents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF53DA92C496DFD00053484 /* Recents.swift */; };
+		8AF53DAC2C496E0400053484 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF53DAB2C496E0400053484 /* Search.swift */; };
+		8AF53DAE2C496E1300053484 /* Graphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF53DAD2C496E1300053484 /* Graphs.swift */; };
+		8AF53DB02C496E1C00053484 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF53DAF2C496E1C00053484 /* Settings.swift */; };
 		8AF7D0C92C46932900D484D6 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF7D0C82C46932900D484D6 /* Tab.swift */; };
 		8AF7D0CB2C46995B00D484D6 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF7D0CA2C46995B00D484D6 /* Category.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +33,10 @@
 		8A23ADD52C464F6B004F3030 /* IntroScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroScreen.swift; sourceTree = "<group>"; };
 		8A2AF39E2C479FE40053C844 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		8A34F5052C4949C000AF27E6 /* TintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintColor.swift; sourceTree = "<group>"; };
+		8AF53DA92C496DFD00053484 /* Recents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recents.swift; sourceTree = "<group>"; };
+		8AF53DAB2C496E0400053484 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		8AF53DAD2C496E1300053484 /* Graphs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graphs.swift; sourceTree = "<group>"; };
+		8AF53DAF2C496E1C00053484 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		8AF7D0C82C46932900D484D6 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		8AF7D0CA2C46995B00D484D6 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +92,7 @@
 		8A23ADD32C464F4E004F3030 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8AF53DA82C496DE800053484 /* TabViews */,
 				8A23ADD52C464F6B004F3030 /* IntroScreen.swift */,
 				8A1D3AFF2C46560100259D4F /* PointView.swift */,
 			);
@@ -99,6 +108,17 @@
 				8A34F5052C4949C000AF27E6 /* TintColor.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		8AF53DA82C496DE800053484 /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
+				8AF53DA92C496DFD00053484 /* Recents.swift */,
+				8AF53DAB2C496E0400053484 /* Search.swift */,
+				8AF53DAD2C496E1300053484 /* Graphs.swift */,
+				8AF53DAF2C496E1C00053484 /* Settings.swift */,
+			);
+			path = TabViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,12 +192,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A34F5062C4949C000AF27E6 /* TintColor.swift in Sources */,
+				8AF53DAA2C496DFD00053484 /* Recents.swift in Sources */,
 				8A2AF39F2C479FE40053C844 /* Transaction.swift in Sources */,
 				8A23ADC82C464EF9004F3030 /* ContentView.swift in Sources */,
 				8A23ADD62C464F6B004F3030 /* IntroScreen.swift in Sources */,
 				8AF7D0C92C46932900D484D6 /* Tab.swift in Sources */,
+				8AF53DB02C496E1C00053484 /* Settings.swift in Sources */,
 				8A23ADC62C464EF9004F3030 /* ExpenseTrackerApp.swift in Sources */,
+				8AF53DAC2C496E0400053484 /* Search.swift in Sources */,
 				8A1D3B002C46560100259D4F /* PointView.swift in Sources */,
+				8AF53DAE2C496E1300053484 /* Graphs.swift in Sources */,
 				8AF7D0CB2C46995B00D484D6 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
