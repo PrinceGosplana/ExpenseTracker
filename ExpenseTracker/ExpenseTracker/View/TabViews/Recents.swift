@@ -42,6 +42,10 @@ struct Recents: View {
                         .foregroundStyle(.gray)
                 }
             }
+            .visualEffect { content, geometryProxy in
+                content
+                    .scaleEffect(headerScale(size, proxy: geometryProxy), anchor: .topLeading)
+            }
 
             Spacer(minLength: 0)
 
@@ -64,6 +68,15 @@ struct Recents: View {
                 .padding(.horizontal, -15)
                 .padding(.top, -(safeArea.top + 15))
         }
+    }
+
+    private func headerScale(_ size: CGSize, proxy: GeometryProxy) -> CGFloat {
+        let minY = proxy.frame(in: .scrollView).minY
+        let screenHeight = size.height
+
+        let progress = minY / screenHeight
+        let scale = (min(max(progress, 0), 1)) * 0.4
+        return 1 + scale
     }
 }
 
