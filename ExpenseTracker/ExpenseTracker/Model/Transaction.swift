@@ -16,13 +16,17 @@ struct Transaction: Identifiable {
     let category: String
     let tintColor: String
 
-    init(title: String, remarks: String, amount: Double, dateAdded: Date, category: Category , tintColor: String ) {
+    init(title: String, remarks: String, amount: Double, dateAdded: Date, category: Category , tintColor: TintColor ) {
         self.title = title
         self.remarks = remarks
         self.amount = amount
         self.dateAdded = dateAdded
         self.category = category.rawValue
-        self.tintColor = tintColor
+        self.tintColor = tintColor.color
+    }
+
+    var color: Color {
+        tints.first(where: { $0.color == tintColor })?.value ?? .accent
     }
 
 }
