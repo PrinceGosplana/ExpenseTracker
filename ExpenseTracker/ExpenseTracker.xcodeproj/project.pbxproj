@@ -14,6 +14,7 @@
 		8A23ADCD2C464EFC004F3030 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A23ADCC2C464EFC004F3030 /* Preview Assets.xcassets */; };
 		8A23ADD62C464F6B004F3030 /* IntroScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A23ADD52C464F6B004F3030 /* IntroScreen.swift */; };
 		8A2AF39F2C479FE40053C844 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2AF39E2C479FE40053C844 /* Transaction.swift */; };
+		8A34F5062C4949C000AF27E6 /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A34F5052C4949C000AF27E6 /* TintColor.swift */; };
 		8AF7D0C92C46932900D484D6 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF7D0C82C46932900D484D6 /* Tab.swift */; };
 		8AF7D0CB2C46995B00D484D6 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF7D0CA2C46995B00D484D6 /* Category.swift */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,7 @@
 		8A23ADCC2C464EFC004F3030 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8A23ADD52C464F6B004F3030 /* IntroScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroScreen.swift; sourceTree = "<group>"; };
 		8A2AF39E2C479FE40053C844 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		8A34F5052C4949C000AF27E6 /* TintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintColor.swift; sourceTree = "<group>"; };
 		8AF7D0C82C46932900D484D6 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		8AF7D0CA2C46995B00D484D6 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +96,7 @@
 				8AF7D0C82C46932900D484D6 /* Tab.swift */,
 				8AF7D0CA2C46995B00D484D6 /* Category.swift */,
 				8A2AF39E2C479FE40053C844 /* Transaction.swift */,
+				8A34F5052C4949C000AF27E6 /* TintColor.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A34F5062C4949C000AF27E6 /* TintColor.swift in Sources */,
 				8A2AF39F2C479FE40053C844 /* Transaction.swift in Sources */,
 				8A23ADC82C464EF9004F3030 /* ContentView.swift in Sources */,
 				8A23ADD62C464F6B004F3030 /* IntroScreen.swift in Sources */,
