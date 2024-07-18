@@ -9,6 +9,9 @@ import SwiftUI
 
 struct Recents: View {
     @AppStorage("userName") private var userName: String = ""
+    @State private var startDate: Date = .now.startOfMonth
+    @State private var endDate: Date = .now.endOfMonth
+
     var body: some View {
         GeometryReader {
             let size = $0.size
