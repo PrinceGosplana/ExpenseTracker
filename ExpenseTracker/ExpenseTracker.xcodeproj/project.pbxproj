@@ -19,6 +19,7 @@
 		8AF53DAC2C496E0400053484 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF53DAB2C496E0400053484 /* Search.swift */; };
 		8AF53DAE2C496E1300053484 /* Graphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF53DAD2C496E1300053484 /* Graphs.swift */; };
 		8AF53DB02C496E1C00053484 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF53DAF2C496E1C00053484 /* Settings.swift */; };
+		8AF53DB32C497EF100053484 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF53DB22C497EF100053484 /* View+Extensions.swift */; };
 		8AF7D0C92C46932900D484D6 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF7D0C82C46932900D484D6 /* Tab.swift */; };
 		8AF7D0CB2C46995B00D484D6 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF7D0CA2C46995B00D484D6 /* Category.swift */; };
 /* End PBXBuildFile section */
@@ -37,6 +38,7 @@
 		8AF53DAB2C496E0400053484 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		8AF53DAD2C496E1300053484 /* Graphs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graphs.swift; sourceTree = "<group>"; };
 		8AF53DAF2C496E1C00053484 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		8AF53DB22C497EF100053484 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		8AF7D0C82C46932900D484D6 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		8AF7D0CA2C46995B00D484D6 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +73,7 @@
 		8A23ADC42C464EF9004F3030 /* ExpenseTracker */ = {
 			isa = PBXGroup;
 			children = (
+				8AF53DB12C4973FB00053484 /* Helpers */,
 				8A23ADD42C464F57004F3030 /* Model */,
 				8A23ADD32C464F4E004F3030 /* View */,
 				8A23ADC52C464EF9004F3030 /* ExpenseTrackerApp.swift */,
@@ -119,6 +122,14 @@
 				8AF53DAF2C496E1C00053484 /* Settings.swift */,
 			);
 			path = TabViews;
+			sourceTree = "<group>";
+		};
+		8AF53DB12C4973FB00053484 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8AF53DB22C497EF100053484 /* View+Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +211,7 @@
 				8AF53DB02C496E1C00053484 /* Settings.swift in Sources */,
 				8A23ADC62C464EF9004F3030 /* ExpenseTrackerApp.swift in Sources */,
 				8AF53DAC2C496E0400053484 /* Search.swift in Sources */,
+				8AF53DB32C497EF100053484 /* View+Extensions.swift in Sources */,
 				8A1D3B002C46560100259D4F /* PointView.swift in Sources */,
 				8AF53DAE2C496E1300053484 /* Graphs.swift in Sources */,
 				8AF7D0CB2C46995B00D484D6 /* Category.swift in Sources */,

@@ -30,11 +30,33 @@ struct Recents: View {
     /// Header view
     @ViewBuilder
     func HeaderView(_ size: CGSize) -> some View {
-        VStack(alignment: .leading, spacing: 5) {
-            Text("Welcome!")
-                .font(.title.bold())
+        HStack(spacing: 10) {
+            VStack(alignment: .leading, spacing: 5) {
+                Text("Welcome!")
+                    .font(.title.bold())
+            }
+
+            Spacer(minLength: 0)
+
+            NavigationLink {
+
+            } label: {
+                Image(systemName: "plus")
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.white)
+                    .frame(width: 45, height: 45)
+                    .background(.accent.gradient, in: .circle)
+                    .contentShape(.circle)
+            }
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.bottom, 5)
+        .background {
+            Rectangle()
+                .fill(.ultraThinMaterial)
+                .padding(.horizontal, -15)
+                .padding(.top, -(safeArea.top + 15))
+        }
     }
 }
 
