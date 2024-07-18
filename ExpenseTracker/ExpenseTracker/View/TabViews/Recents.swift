@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Recents: View {
+    @AppStorage("userName") private var userName: String = ""
     var body: some View {
         GeometryReader {
             let size = $0.size
@@ -34,6 +35,12 @@ struct Recents: View {
             VStack(alignment: .leading, spacing: 5) {
                 Text("Welcome!")
                     .font(.title.bold())
+
+                if !userName.isEmpty {
+                    Text(userName)
+                        .font(.callout)
+                        .foregroundStyle(.gray)
+                }
             }
 
             Spacer(minLength: 0)
