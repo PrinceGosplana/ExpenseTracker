@@ -37,6 +37,7 @@ struct Recents: View {
 
                             /// custom segmented control
                             CustomSegmentedControl()
+                                .padding(.bottom, 10)
 
                             ForEach(sampleTransactions) {
                                 TransactionCardView(transaction: $0)
