@@ -20,7 +20,14 @@ struct Recents: View {
                 ScrollView(.vertical) {
                     LazyVStack(spacing: 10, pinnedViews: [.sectionHeaders]) {
                         Section {
+                            Button {
 
+                            } label: {
+                                Text("\(format(date: startDate, format: "dd - MMM yy")) to \(format(date: endDate, format: "dd - MMM yy"))")
+                                    .font(.caption2)
+                                    .foregroundStyle(.gray)
+                            }
+                            .hSpacing(.leading)
                         } header: {
                             HeaderView(size)
                         }
