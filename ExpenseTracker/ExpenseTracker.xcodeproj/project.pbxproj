@@ -10,6 +10,7 @@
 		8A1982C52C4986550055879F /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1982C42C4986550055879F /* Date+Extension.swift */; };
 		8A1D3B002C46560100259D4F /* PointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D3AFF2C46560100259D4F /* PointView.swift */; };
 		8A2202F52C4A170B00F2B9B1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2202F42C4A170B00F2B9B1 /* CardView.swift */; };
+		8A2202F72C4A214B00F2B9B1 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2202F62C4A214B00F2B9B1 /* TransactionCardView.swift */; };
 		8A23ADC62C464EF9004F3030 /* ExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A23ADC52C464EF9004F3030 /* ExpenseTrackerApp.swift */; };
 		8A23ADC82C464EF9004F3030 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A23ADC72C464EF9004F3030 /* ContentView.swift */; };
 		8A23ADCA2C464EFC004F3030 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A23ADC92C464EFC004F3030 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		8A1982C42C4986550055879F /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		8A1D3AFF2C46560100259D4F /* PointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointView.swift; sourceTree = "<group>"; };
 		8A2202F42C4A170B00F2B9B1 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		8A2202F62C4A214B00F2B9B1 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
 		8A23ADC22C464EF9004F3030 /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A23ADC52C464EF9004F3030 /* ExpenseTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerApp.swift; sourceTree = "<group>"; };
 		8A23ADC72C464EF9004F3030 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				8A2202F42C4A170B00F2B9B1 /* CardView.swift */,
+				8A2202F62C4A214B00F2B9B1 /* TransactionCardView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				8A1982C52C4986550055879F /* Date+Extension.swift in Sources */,
 				8AF53DAE2C496E1300053484 /* Graphs.swift in Sources */,
 				8AF7D0CB2C46995B00D484D6 /* Category.swift in Sources */,
+				8A2202F72C4A214B00F2B9B1 /* TransactionCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

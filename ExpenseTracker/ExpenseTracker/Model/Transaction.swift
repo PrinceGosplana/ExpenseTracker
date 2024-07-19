@@ -36,5 +36,5 @@ var sampleTransactions: [Transaction] = [
     .init(title: "Magic Keyboard", remarks: "Apple Product", amount: 129, dateAdded: .now, category: .expense, tintColor: tints.randomElement()!),
     .init(title: "Apple Musuc", remarks: "Subscription", amount: 10.99, dateAdded: .now, category: .expense, tintColor: tints.randomElement()!),
     .init(title: "iCloud", remarks: "Subscription", amount: 0.99, dateAdded: .now, category: .expense, tintColor: tints.randomElement()!),
-    .init(title: "Payment", remarks: "Payment Received!", amount: 2000, dateAdded: .now, category: .income, tintColor: tints.randomElement()!),
+    .init(title: "Payment", remarks: "Payment Received!", amount: 2000, dateAdded: .now, category: .income, tintColor: tints.randomElement()!)
 ]
