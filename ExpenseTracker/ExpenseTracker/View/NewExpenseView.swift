@@ -25,10 +25,21 @@ struct NewExpenseView: View {
                     .hSpacing(.leading)
 
                 /// Preview transaction card view
+                TransactionCardView(
+                    transaction: .init(
+                        title: title.isEmpty ? "Title" : remarks,
+                        remarks: remarks.isEmpty ? "Remarks" : remarks,
+                        amount: amount,
+                        dateAdded: dateAdded,
+                        category: category,
+                        tintColor: tint
+                    )
+                )
             }
             .padding(15)
         }
         .navigationTitle("Add Transaction")
+        .background(.gray.opacity(0.15))
     }
 }
 
