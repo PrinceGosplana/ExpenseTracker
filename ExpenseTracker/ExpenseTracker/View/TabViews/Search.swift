@@ -26,6 +26,9 @@ struct Search: View {
                     .opacity(filteredText.isEmpty ? 1 : 0)
             }
             .onChange(of: searchText, { oldValue, newValue in
+                if newValue.isEmpty {
+                    filteredText = ""
+                }
                 searchPublisher.send(newValue)
             })
             .onReceive(searchPublisher.debounce(for: .seconds(0.3), scheduler: DispatchQueue.main), perform: { text in
