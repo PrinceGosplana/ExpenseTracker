@@ -35,6 +35,10 @@ struct NewExpenseView: View {
                         tintColor: tint
                     )
                 )
+
+                CustomSection(title: "Title", hint: "Magic Keyboard", value: $title)
+
+                CustomSection(title: "Remarks", hint: "Apple Product!", value: $remarks)
             }
             .padding(15)
         }
