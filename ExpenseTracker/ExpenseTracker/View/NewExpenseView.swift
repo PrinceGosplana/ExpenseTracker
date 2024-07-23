@@ -39,11 +39,37 @@ struct NewExpenseView: View {
                 CustomSection(title: "Title", hint: "Magic Keyboard", value: $title)
 
                 CustomSection(title: "Remarks", hint: "Apple Product!", value: $remarks)
+
+                /// Amount $ Category check box
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("Amount & Category")
+                        .font(.caption)
+                        .foregroundStyle(.gray)
+                        .hSpacing(.leading)
+
+                    HStack(spacing: 15) {
+                        TextField("0.0", value: $amount, formatter: numberFormatter)
+                            .padding(.horizontal, 15)
+                            .padding(.vertical, 12)
+                            .background(.background, in: .rect(cornerRadius: 10))
+                            .frame(maxWidth: 130)
+                            .keyboardType(.decimalPad)
+                    }
+                }
             }
             .padding(15)
         }
         .navigationTitle("Add Transaction")
         .background(.gray.opacity(0.15))
+    }
+
+    /// Number formatter
+    var numberFormatter: NumberFormatter {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.maximumFractionDigits = 2
+
+        return formatter
     }
 }
 
