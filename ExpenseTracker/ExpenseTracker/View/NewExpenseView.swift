@@ -54,6 +54,9 @@ struct NewExpenseView: View {
                             .background(.background, in: .rect(cornerRadius: 10))
                             .frame(maxWidth: 130)
                             .keyboardType(.decimalPad)
+
+                        /// Custom check box
+                        
                     }
                 }
             }
@@ -61,10 +64,19 @@ struct NewExpenseView: View {
         }
         .navigationTitle("Add Transaction")
         .background(.gray.opacity(0.15))
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button("Save") { save() }
+            }
+        }
+    }
+
+    private func save() {
+
     }
 
     /// Number formatter
-    var numberFormatter: NumberFormatter {
+    private var numberFormatter: NumberFormatter {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
         formatter.maximumFractionDigits = 2
