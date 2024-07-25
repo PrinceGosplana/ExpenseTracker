@@ -56,7 +56,7 @@ struct NewExpenseView: View {
                             .keyboardType(.decimalPad)
 
                         /// Custom check box
-                        
+                        CategoryCheckBox(category: $category)
                     }
                 }
             }

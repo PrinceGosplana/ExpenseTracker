@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8A1982C52C4986550055879F /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1982C42C4986550055879F /* Date+Extension.swift */; };
+		8A1BF2EC2C52354900968D91 /* CategoryCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1BF2EB2C52354900968D91 /* CategoryCheckBox.swift */; };
 		8A1D3B002C46560100259D4F /* PointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D3AFF2C46560100259D4F /* PointView.swift */; };
 		8A2202F52C4A170B00F2B9B1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2202F42C4A170B00F2B9B1 /* CardView.swift */; };
 		8A2202F72C4A214B00F2B9B1 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2202F62C4A214B00F2B9B1 /* TransactionCardView.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		8A1982C42C4986550055879F /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		8A1BF2EB2C52354900968D91 /* CategoryCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCheckBox.swift; sourceTree = "<group>"; };
 		8A1D3AFF2C46560100259D4F /* PointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointView.swift; sourceTree = "<group>"; };
 		8A2202F42C4A170B00F2B9B1 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		8A2202F62C4A214B00F2B9B1 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				8A23ADD52C464F6B004F3030 /* IntroScreen.swift */,
 				8A1D3AFF2C46560100259D4F /* PointView.swift */,
 				8A4C8B9D2C4F992300DB2109 /* NewExpenseView.swift */,
+				8A1BF2EB2C52354900968D91 /* CategoryCheckBox.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				8A34F5062C4949C000AF27E6 /* TintColor.swift in Sources */,
 				8A2202FD2C4A297700F2B9B1 /* Action.swift in Sources */,
+				8A1BF2EC2C52354900968D91 /* CategoryCheckBox.swift in Sources */,
 				8AF53DAA2C496DFD00053484 /* Recents.swift in Sources */,
 				8A4C8B9E2C4F992300DB2109 /* NewExpenseView.swift in Sources */,
 				8A2203012C4A29BB00F2B9B1 /* OffsetKey.swift in Sources */,
