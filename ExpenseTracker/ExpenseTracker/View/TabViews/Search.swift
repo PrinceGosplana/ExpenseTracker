@@ -12,14 +12,25 @@ struct Search: View {
 
     @State private var searchText = ""
     @State private var filteredText = ""
+    @State private var selectedCategory: Category? = nil
     let searchPublisher = PassthroughSubject<String, Never>()
 
     var body: some View {
         NavigationStack {
             ScrollView(.vertical) {
                 LazyVStack(spacing: 12) {
-
+                    FilterTransactionsView(category: selectedCategory, searchText: filteredText) { transactions in
+                        ForEach(transactions) { transaction in
+                            NavigationLink {
+                                TransactionView(editTransaction: transaction)
+                            } label: {
+                                TransactionCardView(transaction: transaction)
+                            }
+                            .buttonStyle(.plain)
+                        }
+                    }
                 }
+                .padding(15)
             }
             .overlay {
                 ContentUnavailableView("Search Transactions", systemImage: "magnifyingglass")
