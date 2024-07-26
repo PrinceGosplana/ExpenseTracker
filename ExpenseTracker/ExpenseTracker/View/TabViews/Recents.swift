@@ -5,6 +5,7 @@
 //  Created by Oleksandr Isaiev on 18.07.2024.
 //
 
+import SwiftData
 import SwiftUI
 
 struct Recents: View {
@@ -16,6 +17,8 @@ struct Recents: View {
 
     /// Animation
     @Namespace private var animation
+
+    @Query(sort: [SortDescriptor(\Transaction.dateAdded, order: .reverse)], animation: .snappy) private var transactions: [Transaction]
 
     var body: some View {
         GeometryReader {
@@ -39,6 +42,10 @@ struct Recents: View {
                             /// custom segmented control
                             CustomSegmentedControl()
                                 .padding(.bottom, 10)
+
+                            ForEach(transactions) {
+                                TransactionCardView(transaction: $0)
+                            }
 
                         } header: {
                             HeaderView(size)
