@@ -18,8 +18,6 @@ struct Recents: View {
     /// Animation
     @Namespace private var animation
 
-    @Query(sort: [SortDescriptor(\Transaction.dateAdded, order: .reverse)], animation: .snappy) private var transactions: [Transaction]
-
     var body: some View {
         GeometryReader {
             let size = $0.size
@@ -37,20 +35,24 @@ struct Recents: View {
                             }
                             .hSpacing(.leading)
 
-                            CardView(income: 450, expense: 210)
+                            FilterTransactionsView(startDate: startDate, endDate: endDate) { transactions in
 
-                            /// custom segmented control
-                            CustomSegmentedControl()
-                                .padding(.bottom, 10)
+                                CardView(income: total(transactions, category: .income), expense: total(transactions, category: .expense))
 
-                            ForEach(transactions) { transaction in
-                                NavigationLink {
-                                    TransactionView(editTransaction: transaction)
-                                } label: {
-                                    TransactionCardView(transaction: transaction)
+                                /// custom segmented control
+                                CustomSegmentedControl()
+                                    .padding(.bottom, 10)
+
+                                ForEach(transactions) { transaction in
+                                    NavigationLink {
+                                        TransactionView(editTransaction: transaction)
+                                    } label: {
+                                        TransactionCardView(transaction: transaction)
+                                    }
+                                    .buttonStyle(.plain)
                                 }
-                                .buttonStyle(.plain)
                             }
+
 
                         } header: {
                             HeaderView(size)
