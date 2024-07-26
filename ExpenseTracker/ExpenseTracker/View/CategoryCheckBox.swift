@@ -44,5 +44,5 @@ struct CategoryCheckBox: View {
 }
 
 #Preview {
-    NewExpenseView()
+    TransactionView()
 }
