@@ -59,6 +59,19 @@ struct NewExpenseView: View {
                         CategoryCheckBox(category: $category)
                     }
                 }
+
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("Date")
+                        .font(.caption)
+                        .foregroundStyle(.gray)
+                        .hSpacing(.leading)
+
+                    DatePicker("", selection: $dateAdded, displayedComponents: [.date])
+                        .datePickerStyle(.graphical)
+                        .padding(.horizontal, 15)
+                        .padding(.vertical, 12)
+                        .background(.background, in: .rect(cornerRadius: 10))
+                }
             }
             .padding(15)
         }
