@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct NewExpenseView: View {
+    /// Env Properties
+    @Environment(\.modelContext) private var context
+    @Environment(\.dismiss) private var dismiss
+
     @State private var title = ""
     @State private var remarks = ""
     @State private var amount: Double = .zero
@@ -85,7 +89,19 @@ struct NewExpenseView: View {
     }
 
     private func save() {
+        /// Saving Item to SwiftData
+        let transaction = Transaction(
+            title: title,
+            remarks: remarks,
+            amount: amount,
+            dateAdded: dateAdded,
+            category: category,
+            tintColor: tint
+        )
 
+        context.insert(transaction)
+
+        dismiss()
     }
 
     /// Number formatter
@@ -98,8 +114,8 @@ struct NewExpenseView: View {
     }
 }
 
-#Preview {
-    NavigationStack {
-        NewExpenseView()
-    }
-}
+//#Preview {
+//    NavigationStack {
+//        NewExpenseView()
+//    }
+//}
