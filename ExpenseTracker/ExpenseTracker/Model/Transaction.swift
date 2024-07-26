@@ -10,12 +10,12 @@ import SwiftUI
 
 @Model
 class Transaction {
-    let title: String
-    let remarks: String
-    let amount: Double
-    let dateAdded: Date
-    let category: String
-    let tintColor: String
+    var title: String
+    var remarks: String
+    var amount: Double
+    var dateAdded: Date
+    var category: String
+    var tintColor: String
 
     init(title: String, remarks: String, amount: Double, dateAdded: Date, category: Category , tintColor: TintColor ) {
         self.title = title
@@ -26,7 +26,18 @@ class Transaction {
         self.tintColor = tintColor.color
     }
 
+    @Transient
     var color: Color {
         tints.first(where: { $0.color == tintColor })?.value ?? .accent
+    }
+
+    @Transient
+    var tint: TintColor? {
+        tints.first(where: { $0.color == tintColor })
+    }
+
+    @Transient
+    var rawCategory: Category? {
+        Category.allCases.first(where: { category == $0.rawValue })
     }
 }

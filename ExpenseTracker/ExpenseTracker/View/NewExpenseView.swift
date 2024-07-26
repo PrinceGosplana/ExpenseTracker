@@ -11,14 +11,15 @@ struct NewExpenseView: View {
     /// Env Properties
     @Environment(\.modelContext) private var context
     @Environment(\.dismiss) private var dismiss
-
+    var editTransaction: Transaction?
+    
     @State private var title = ""
     @State private var remarks = ""
     @State private var amount: Double = .zero
     @State private var dateAdded: Date = .now
     @State private var category: Category = .expense
     /// Random Tint
-    var tint: TintColor = tints.randomElement()!
+    @State var tint: TintColor = tints.randomElement()!
 
     var body: some View {
         ScrollView(.vertical) {
@@ -86,20 +87,43 @@ struct NewExpenseView: View {
                 Button("Save") { save() }
             }
         }
+        /// Loading all the data from the existing transaction into the necessary text fields and pickers
+        .onAppear {
+            if let editTransaction {
+                title = editTransaction.title
+                remarks = editTransaction.remarks
+                dateAdded = editTransaction.dateAdded
+                if let category = editTransaction.rawCategory {
+                    self.category = category
+                }
+                amount = editTransaction.amount
+                if let tint = editTransaction.tint {
+                    self.tint = tint
+                }
+            }
+        }
     }
 
     private func save() {
-        /// Saving Item to SwiftData
-        let transaction = Transaction(
-            title: title,
-            remarks: remarks,
-            amount: amount,
-            dateAdded: dateAdded,
-            category: category,
-            tintColor: tint
-        )
+        if editTransaction != nil {
+            editTransaction?.title = title
+            editTransaction?.remarks = remarks
+            editTransaction?.amount = amount
+            editTransaction?.category = category.rawValue
+            editTransaction?.dateAdded = dateAdded
+        } else {
+            /// Saving Item to SwiftData
+            let transaction = Transaction(
+                title: title,
+                remarks: remarks,
+                amount: amount,
+                dateAdded: dateAdded,
+                category: category,
+                tintColor: tint
+            )
 
-        context.insert(transaction)
+            context.insert(transaction)
+        }
 
         dismiss()
     }
