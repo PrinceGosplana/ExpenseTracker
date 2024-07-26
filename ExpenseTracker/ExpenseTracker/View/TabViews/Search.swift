@@ -24,7 +24,7 @@ struct Search: View {
                             NavigationLink {
                                 TransactionView(editTransaction: transaction)
                             } label: {
-                                TransactionCardView(transaction: transaction)
+                                TransactionCardView(transaction: transaction, showsCategory: true)
                             }
                             .buttonStyle(.plain)
                         }
