@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A15666D2C54DF9D008F636D /* ChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A15666C2C54DF9C008F636D /* ChartModel.swift */; };
 		8A1982C52C4986550055879F /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1982C42C4986550055879F /* Date+Extension.swift */; };
 		8A1BF2EC2C52354900968D91 /* CategoryCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1BF2EB2C52354900968D91 /* CategoryCheckBox.swift */; };
 		8A1D3B002C46560100259D4F /* PointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D3AFF2C46560100259D4F /* PointView.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A15666C2C54DF9C008F636D /* ChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartModel.swift; sourceTree = "<group>"; };
 		8A1982C42C4986550055879F /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		8A1BF2EB2C52354900968D91 /* CategoryCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCheckBox.swift; sourceTree = "<group>"; };
 		8A1D3AFF2C46560100259D4F /* PointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointView.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				8AF7D0CA2C46995B00D484D6 /* Category.swift */,
 				8A2AF39E2C479FE40053C844 /* Transaction.swift */,
 				8A34F5052C4949C000AF27E6 /* TintColor.swift */,
+				8A15666C2C54DF9C008F636D /* ChartModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				8A23ADC82C464EF9004F3030 /* ContentView.swift in Sources */,
 				8A2202F52C4A170B00F2B9B1 /* CardView.swift in Sources */,
 				8A2202F92C4A294A00F2B9B1 /* SwipeAction.swift in Sources */,
+				8A15666D2C54DF9D008F636D /* ChartModel.swift in Sources */,
 				8A2202FF2C4A299100F2B9B1 /* ActionBuilder.swift in Sources */,
 				8A2202FB2C4A296900F2B9B1 /* SwipeDirection.swift in Sources */,
 				8A23ADD62C464F6B004F3030 /* IntroScreen.swift in Sources */,
