@@ -20,11 +20,15 @@ struct Graphs: View {
                 LazyVStack(spacing: 10) {
                     /// Chart view
                     ChartView()
-                        .padding(10)
                         .frame(height: 200)
+                        .padding(10)
+                        .padding(.top, 10)
                         .background(.background, in: .rect(cornerRadius: 10))
                 }
+                .padding(15)
             }
+            .navigationTitle("Graphs")
+            .background(.gray.opacity(0.15))
             .onAppear {
                 createChartGroup()
             }
@@ -48,6 +52,8 @@ struct Graphs: View {
         }
         /// Making Chart scrollable
         .chartScrollableAxes(.horizontal)
+        .chartXVisibleDomain(length: 4)
+        .chartLegend(position: .bottom, alignment: .trailing)
         /// Foreground colors
         .chartForegroundStyleScale(range: [Color.green.gradient, Color.red.gradient])
     }
