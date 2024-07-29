@@ -54,6 +54,16 @@ struct Graphs: View {
         .chartScrollableAxes(.horizontal)
         .chartXVisibleDomain(length: 4)
         .chartLegend(position: .bottom, alignment: .trailing)
+        .chartYAxis {
+            AxisMarks(position: .leading) { value in
+                let doubleValue = value.as(Double.self) ?? 0
+                AxisGridLine()
+                AxisTick()
+                AxisValueLabel {
+                    Text(axisLabel(doubleValue))
+                }
+            }
+        }
         /// Foreground colors
         .chartForegroundStyleScale(range: [Color.green.gradient, Color.red.gradient])
     }
@@ -100,6 +110,13 @@ struct Graphs: View {
                 self.chartGroups = chartGroups
             }
         }
+    }
+
+    func axisLabel(_ value: Double) -> String {
+        let intValue = Int(value)
+        let kValue = intValue / 1000
+
+        return intValue < 1000 ? "\(intValue)" : "\(kValue)K"
     }
 }
 
