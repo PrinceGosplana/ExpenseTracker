@@ -142,8 +142,8 @@ struct TransactionView: View {
     }
 }
 
-//#Preview {
-//    NavigationStack {
-//        NewExpenseView()
-//    }
-//}
+#Preview {
+    NavigationStack {
+        TransactionView()
+    }
+}
