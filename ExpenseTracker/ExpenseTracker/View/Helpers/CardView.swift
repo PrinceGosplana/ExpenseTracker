@@ -21,6 +21,7 @@ struct CardView: View {
                 HStack(spacing: 12) {
                     Text("\(currencyString(income - expense))")
                         .font(.title.bold())
+                        .foregroundStyle(Color.primary)
 
                     Image(systemName: expense > income ? "chart.line.downtrend.xyaxis" : "chart.line.uptrend.xyaxis")
                         .foregroundStyle(expense > income ? .red : .green)
@@ -50,7 +51,8 @@ struct CardView: View {
                                 Text(currencyString(category == .income ? income : expense, allowDigits: 0))
                                     .font(.callout)
                                     .fontWeight(.semibold)
-                                    .foregroundStyle(.primary)
+                                /// In the foreground style modifier, primary means the app's accent color. To get the system's primary color (black or white), we need to use Color.primary
+                                    .foregroundStyle(Color.primary)
                             }
 
                             if category == .income {
