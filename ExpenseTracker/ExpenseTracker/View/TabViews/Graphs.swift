@@ -33,11 +33,11 @@ struct Graphs: View {
                                 .hSpacing(.leading)
 
                             NavigationLink {
-
+                                ListOfExpenses(month: group.date)
                             } label: {
                                 CardView(income: group.totalIncome, expense: group.totalExpense)
                             }
-
+                            .buttonStyle(.plain)
                         }
                     }
                 }
