@@ -28,7 +28,7 @@ class Transaction {
 
     @Transient
     var color: Color {
-        tints.first(where: { $0.color == tintColor })?.value ?? .accent
+        tints.first(where: { $0.color == tintColor })?.value ?? .red
     }
 
     @Transient

@@ -37,6 +37,8 @@
 		8A23B2052C58D77100155D9A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1982C42C4986550055879F /* Date+Extension.swift */; };
 		8A23B2062C58D7A300155D9A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2202F42C4A170B00F2B9B1 /* CardView.swift */; };
 		8A23B2072C58D7F900155D9A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF7D0CA2C46995B00D484D6 /* Category.swift */; };
+		8A23B2082C58D8E100155D9A /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2AF39E2C479FE40053C844 /* Transaction.swift */; };
+		8A23B2092C58D8FD00155D9A /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A34F5052C4949C000AF27E6 /* TintColor.swift */; };
 		8A2AF39F2C479FE40053C844 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2AF39E2C479FE40053C844 /* Transaction.swift */; };
 		8A34F5062C4949C000AF27E6 /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A34F5052C4949C000AF27E6 /* TintColor.swift */; };
 		8A3E13D42C538CE100B4801F /* FilterTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3E13D32C538CE100B4801F /* FilterTransactionsView.swift */; };
@@ -413,10 +415,12 @@
 			files = (
 				8A23B2052C58D77100155D9A /* Date+Extension.swift in Sources */,
 				8A23B2032C58D74200155D9A /* FilterTransactionsView.swift in Sources */,
+				8A23B2082C58D8E100155D9A /* Transaction.swift in Sources */,
 				8A23B1F82C58D66800155D9A /* StatsCardView.swift in Sources */,
 				8A23B2042C58D76F00155D9A /* View+Extensions.swift in Sources */,
 				8A23B2062C58D7A300155D9A /* CardView.swift in Sources */,
 				8A23B1F62C58D66800155D9A /* StatsCardViewBundle.swift in Sources */,
+				8A23B2092C58D8FD00155D9A /* TintColor.swift in Sources */,
 				8A23B2072C58D7F900155D9A /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
